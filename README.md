@@ -4,7 +4,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/midkiffaries/tedilize.css)](https://github.com/midkiffaries/tedilize.css/issues)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/midkiffaries/tedilize.css)
 
-# Demo Page [https://tedilize.netlify.app/testpage.html]
+## Demo Page [https://tedilize.netlify.app/testpage.html]
 
 This is my personal CSS reset and normalization stylesheet. I currently use this stylesheet on my website and with my WordPress Theme [https://github.com/midkiffaries/m20T1].
 
