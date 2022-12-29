@@ -2,6 +2,6 @@
 
 My personal CSS reset and normalization.
 
-**Download**
-
-See https://midkiffaries.github.io/tedilize.css/latest/tedilize.css
+## Resources
+- normalize.css [https://github.com/necolas/normalize.css]
+- modern-normalize.css [https://github.com/sindresorhus/modern-normalize]
