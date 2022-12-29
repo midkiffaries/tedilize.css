@@ -1,7 +1,5 @@
 # tedilize.css
 
-![GitHub](https://img.shields.io/github/license/midkiffaries/tedilize.css?color=blue&style=for-the-badge)
-
 [![GitHub last commit](https://img.shields.io/github/last-commit/midkiffaries/tedilize.css)](https://github.com/midkiffaries/tedilize.css/commits)
 [![GitHub issues](https://img.shields.io/github/issues/midkiffaries/tedilize.css)](https://github.com/midkiffaries/tedilize.css/issues)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/midkiffaries/tedilize.css)
