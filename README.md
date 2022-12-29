@@ -1,6 +1,6 @@
 # tedilize.css
 
-My personal CSS reset and normalization.
+This is my personal CSS reset and normalization stylesheet.
 
 ## Resources
 - normalize.css [https://github.com/necolas/normalize.css]
