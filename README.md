@@ -1,13 +1,6 @@
 # tedilize.css
 
-[![npm][npm-image]][npm-url] [![license][license-image]][license-url]
-[![changelog][changelog-image]][changelog-url]
-
-**NPM**
-
-```sh
-npm install --save tedilize.css
-```
+My personal CSS reset and normalization.
 
 **Download**
 
