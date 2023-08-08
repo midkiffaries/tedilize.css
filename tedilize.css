@@ -17,10 +17,6 @@ Tedilize 2.0 - Normalization and Base Styling
 	line-height: 1;
 }
 
-html:focus-within {
-	scroll-behavior: smooth;
-}
-
 html {
 	-webkit-text-size-adjust: 100%;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -39,6 +35,10 @@ html {
 		'Apple Color Emoji',
 		'Segoe UI Emoji',
 		'Noto Color Emoji';
+}
+
+html:focus-within {
+	scroll-behavior: smooth;
 }
 
 
@@ -84,7 +84,7 @@ p {
 	widows: 3;
 }
 
-/* clearfix */
+/* Clearfix */
 header::after,
 main::after,
 footer::after,
@@ -93,6 +93,7 @@ figure::after {
 	clear: both;
 	display: table;
 }
+
 
 /*********************
 Inline elements
@@ -134,8 +135,8 @@ ins {
 }
 
 abbr[title] {
-	-webkit-text-decoration: underline dotted;
-	text-decoration: underline dotted;
+	-webkit-text-decoration: underline dotted currentColor;
+	text-decoration: underline dotted currentColor;
 	cursor: help;
 	border-bottom: none;
 }
@@ -151,11 +152,12 @@ h3,
 h4,
 h5,
 h6 {
-	line-height: 1.2;
+	line-height: 1.15;
 	margin: 1.2rem auto 0.5rem;
 	font-weight: 400;
 	page-break-after: avoid;
 	page-break-inside: avoid;
+	text-wrap: balance;
 }
 
 h1 {
@@ -686,32 +688,6 @@ progress {
 
 
 /*********************
-Accessibility
-********************/
-
-[aria-busy='true'] {
-	cursor: progress;
-}
-
-[aria-controls] {
-	cursor: pointer;
-}
-
-[aria-disabled='true'] {
-	cursor: not-allowed;
-}
-
-[aria-hidden='false'][hidden] {
-	display: initial;
-}
-
-[aria-hidden='false'][hidden]:not(:focus) {
-	clip: rect(0,0,0,0);
-	position: absolute;
-}
-
-
-/*********************
 Firefox Hacks
 *********************/
 
@@ -729,8 +705,8 @@ Firefox Hacks
 Responsive elements
 *********************/
 
-/* Work around for Phones with a 'notch' */
-@supports(padding:max(0px)) {
+/* Work around for Phones with a notch */
+@supports (padding:max(0px)) {
 	body {
 		padding-left: min(0vmin, env(safe-area-inset-left));
 		padding-right: min(0vmin, env(safe-area-inset-right));
@@ -787,7 +763,7 @@ Responsive elements
 	}
 }
 
-/* Printing */
+/* Print Friendly */
 @media print {
 	@page { margin: 2cm; }
 
@@ -802,7 +778,6 @@ Responsive elements
 	mark {
 		-webkit-print-color-adjust: exact;
 		print-color-adjust: exact;
-		color-adjust: exact;
 	}
 
 	table,
@@ -810,6 +785,7 @@ Responsive elements
 	pre,
 	nav,
 	svg,
+	iframe,
 	blockquote,
 	figure,
 	video,
@@ -821,10 +797,6 @@ Responsive elements
 		page-break-inside: avoid;
 		break-inside: avoid;
 		max-width: 100%;
-	}
-
-	iframe {
-		display: none;
 	}
 
 	thead {
