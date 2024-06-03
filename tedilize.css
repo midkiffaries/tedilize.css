@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /********************************************
-Tedilize 2.0 - Normalization and Base Styling 
+Tedilize 2.1 - Normalization and Base Styling 
 *********************************************/
 
 *,
@@ -374,11 +374,7 @@ dialog {
 	left: 0;
 	right: 0;
 	top: 0;
-	width: -webkit-fit-content;
-	width: -moz-fit-content;
 	width: fit-content;
-	height: -webkit-fit-content;
-	height: -moz-fit-content;
 	height: fit-content;
 	margin: auto;
 	display: block;
