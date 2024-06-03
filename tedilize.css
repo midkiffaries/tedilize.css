@@ -23,7 +23,6 @@ html {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	touch-action: manipulation;
-	-moz-tab-size: 4;
 	tab-size: 4;
 	font-family:
 		system-ui,
@@ -453,8 +452,7 @@ textarea {
 }
 
 select {
-	-webkit-appearance: none;
-	-moz-appearance: none;
+	appearance: none;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	cursor: pointer;
@@ -475,7 +473,6 @@ button,
 	background-color: #eee;
 	overflow: visible;
 	cursor: pointer;
-	-webkit-appearance: none;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	user-select: none;
@@ -496,7 +493,6 @@ textarea {
 	overflow: auto;
 	resize: vertical;
 	vertical-align: middle;
-	-webkit-appearance: none;
 	overscroll-behavior-y: contain;
 }
 
@@ -549,7 +545,7 @@ legend + * {
 /* Input Number */
 
 [type='number'] {
-	-moz-appearance: textfield;
+	appearance: textfield;
 }
 
 :out-of-range {
@@ -557,17 +553,17 @@ legend + * {
 }
 
 ::-webkit-inner-spin-button {
-	-webkit-appearance: none;
+	appearance: none;
 }
 
 /* Input Search */
 
 [type='search'] {
-	-webkit-appearance: textfield;
+	appearance: textfield;
 }
 
 ::-webkit-search-decoration {
-	-webkit-appearance: none;
+	appearance: none;
 }
 
 /* Input File Upload */
@@ -577,14 +573,14 @@ legend + * {
 }
 
 ::-webkit-file-upload-button {
-	-webkit-appearance: button;
+	appearance: button;
 	font: inherit;
 }
 
 /* Input Range */
 
 [type='range'] {
-	-webkit-appearance: none;
+	appearance: none;
 	height: 1.8em;
 	width: 9em;
 	vertical-align: middle;
@@ -607,7 +603,7 @@ legend + * {
 }
 
 ::-webkit-slider-thumb {
-	-webkit-appearance: none;
+	appearance: none;
 	margin-top: -0.35em;
 	width: 1.15em;
 	height: 1.15em;
@@ -617,7 +613,7 @@ legend + * {
 }
 
 ::-moz-range-thumb {
-	-moz-appearance: none;
+	appearance: none;
 	width: 1em;
 	height: 1em;
 	border-radius: 50%;
