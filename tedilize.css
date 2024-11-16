@@ -415,7 +415,7 @@ input:not(:focus):invalid {
 
 [disabled],
 [disabled] + label[for] {
-	opacity: 0.4;
+	opacity: 0.5;
 	pointer-events: none;
 }
 
