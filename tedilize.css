@@ -683,9 +683,10 @@ progress {
 
 
 /*********************
-Firefox Hacks
+Hacks & Workarounds
 *********************/
 
+/* Firefox workaround */
 ::-moz-focus-inner {
 	border-style: none;
 	padding: 0;
@@ -695,12 +696,7 @@ Firefox Hacks
 	box-shadow: none;
 }
 
-
-/*********************
-Responsive elements
-*********************/
-
-/* Work around for Phones with a notch */
+/* Workaround for Phones with a notch */
 @supports (padding:max(0px)) {
 	body {
 		padding-left: min(0vmin, env(safe-area-inset-left));
@@ -708,14 +704,13 @@ Responsive elements
 	}
 }
 
-/* Remove all animations and transitions for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
+/* Remove animation for people that prefer not to see them */
+@media (prefers-reduced-motion) {
 	*,
 	*::before,
 	*::after {
-		animation-duration: 0.01ms !important;
-		animation-iteration-count: 1 !important;
-		transition-duration: 0.01ms !important;
+		animation-duration: 0s !important;
+		transition-duration: 0s !important;
 		scroll-behavior: auto !important;
 	}
 	
@@ -724,7 +719,12 @@ Responsive elements
 	}
 }
 
-/* Mobile Devices */
+
+/*********************
+Responsive elements
+*********************/
+
+/* Mobile devices */
 @media (-webkit-min-device-pixel-ratio: 2) {
 	body {
 		min-height: 100vh;
@@ -740,7 +740,7 @@ Responsive elements
 	}
 }
 
-/* Phone (Portrait) and narrow screen */
+/* Phone (Portrait) and narrow screens */
 @media (max-width: 812px) {
 	body {
 		font-size: 0.96em;
@@ -759,7 +759,7 @@ Responsive elements
 	}
 }
 
-/* Print Friendly */
+/* Print friendly */
 @media print {
 	@page { margin: 2cm; }
 
