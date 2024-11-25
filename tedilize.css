@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /********************************************
-Tedilize 2.2 - Normalization and Base Styling 
+Tedilize 2.3 - Normalization and Base Styling 
 *********************************************/
 
 *,
@@ -227,6 +227,10 @@ ol {
 	padding-left: 2rem;
 }
 
+li:empty {
+	display: none;
+}
+
 dt {
 	font-weight: bolder;
 }
@@ -235,7 +239,6 @@ dd {
 	margin-left: 2rem;
 }
 
-nav ol,
 nav ul,
 menu {
 	list-style: none;
