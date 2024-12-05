@@ -379,6 +379,10 @@ details summary {
 	cursor: pointer;
 }
 
+details summary > * {
+	display: inline;
+}
+
 /* Dialog Element */
 
 dialog {
