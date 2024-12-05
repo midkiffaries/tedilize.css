@@ -374,9 +374,9 @@ a:not([href]) {
 
 /* Details/Summary Element */
 
-summary {
-	cursor: pointer;
+details summary { 
 	display: list-item;
+	cursor: pointer;
 }
 
 /* Dialog Element */
