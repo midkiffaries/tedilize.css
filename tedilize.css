@@ -130,13 +130,15 @@ small {
 }
 
 ins {
-	-webkit-text-decoration: underline dashed currentColor;
-	text-decoration: underline dashed currentColor;
+	text-decoration-line: underline;
+	text-decoration-color: currentcolor;
+	text-decoration-style: dashed;
 }
 
 abbr[title] {
-	-webkit-text-decoration: underline dotted currentColor;
-	text-decoration: underline dotted currentColor;
+	text-decoration-line: underline;
+	text-decoration-color: currentcolor;
+	text-decoration-style: dotted;
 	cursor: help;
 	border-bottom: none;
 }
