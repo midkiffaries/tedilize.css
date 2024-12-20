@@ -373,6 +373,11 @@ a:not([href]) {
 	text-decoration: none;
 }
 
+iframe {
+	border: none;
+	max-width: 100%;
+}
+
 /* Details/Summary Element */
 
 details summary { 
