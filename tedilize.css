@@ -306,8 +306,7 @@ Images and figures
 
 img,
 video,
-audio,
-iframe {
+audio {
 	height: auto;
 	max-width: 100%;
 	vertical-align: middle;
