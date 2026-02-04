@@ -523,9 +523,7 @@ label[for] {
 }
 
 output {
-	display: inline-block;
 	font-weight: bold;
-	margin: auto 0.2em;
 }
 
 fieldset {
@@ -681,7 +679,7 @@ progress {
 	display: inline-block;
 	border: 1px solid #bbb;
 	vertical-align: baseline;
-	height: 1.2em;
+	height: 1em;
 }
 
 ::-webkit-progress-bar {
