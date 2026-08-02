@@ -55,10 +55,9 @@ hr {
 	background-color: currentColor;
 	border: 0;
 	clear: both;
-}
-
-hr:not([size]) {
-	height: 1px;
+	&:not([size]) {
+		height: 1px;
+	}
 }
 
 blockquote {
