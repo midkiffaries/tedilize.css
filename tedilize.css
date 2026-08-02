@@ -295,10 +295,6 @@ pre code {
 	display: inline-block;
 }
 
-a > code {
-	color: inherit;
-}
-
 
 /*********************
 Images and figures
