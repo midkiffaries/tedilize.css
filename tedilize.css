@@ -542,7 +542,6 @@ legend {
 
 [type='search'] {
 	appearance: textfield;
-	outline-offset: -2px;
 	::-webkit-search-decoration {
 		appearance: none;
 	}
@@ -659,6 +658,13 @@ Hacks & Workarounds
 
 :-moz-ui-invalid {
 	box-shadow: none;
+}
+
+/* Safari workaround */
+@supports (hanging-punctuation: first) and (-webkit-appearance: none) {
+    [type='search'] {
+		outline-offset: -2px;
+    }
 }
 
 /* Workaround for Phones with a notch */
