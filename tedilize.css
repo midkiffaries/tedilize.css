@@ -390,6 +390,10 @@ Form elements
 	color: #888;
 }
 
+:out-of-range {
+	color: #d00;
+}
+
 input:not(:focus):invalid {
 	color: #d00;
 }
@@ -531,10 +535,6 @@ legend {
 	&::-webkit-inner-spin-button {
 		appearance: none;
 	}
-}
-
-:out-of-range {
-	color: #d00;
 }
 
 /* Input Search */
