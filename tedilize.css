@@ -398,7 +398,6 @@ Form elements
 
 input:not(:focus):invalid {
 	color: #e00;
-	border-color: #e00;
 }
 
 button > *,
