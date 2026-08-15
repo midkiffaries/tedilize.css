@@ -386,18 +386,6 @@ dialog {
 Form elements
 *********************/
 
-::placeholder {
-	color: #888;
-}
-
-:out-of-range {
-	color: #d00;
-}
-
-input:not(:focus):invalid {
-	color: #d00;
-}
-
 [hidden] {
 	display: none !important;
 }
@@ -406,6 +394,11 @@ input:not(:focus):invalid {
 [disabled] + label[for] {
 	opacity: 0.5;
 	pointer-events: none;
+}
+
+input:not(:focus):invalid {
+	color: #e00;
+	border-color: #e00;
 }
 
 button > *,
@@ -426,6 +419,12 @@ textarea,
 	margin: 0;
 	border-radius: 0;
 	background: inherit;
+	&::placeholder {
+		color: #888;
+	}
+	&:out-of-range {
+		color: #e00;
+	}
 }
 
 button,
