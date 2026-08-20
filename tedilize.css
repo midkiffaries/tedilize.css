@@ -512,15 +512,17 @@ legend {
 
 /* Special Fields */
 
-::-webkit-datetime-edit-fields-wrapper,
-::-webkit-datetime-edit-text,
-::-webkit-datetime-edit-minute,
-::-webkit-datetime-edit-hour-field,
-::-webkit-datetime-edit-day-field,
-::-webkit-datetime-edit-month-field,
-::-webkit-datetime-edit-year-field,
-::-webkit-color-swatch-wrapper {
-	padding: 0;
+input {
+	&::-webkit-datetime-edit-fields-wrapper,
+	&::-webkit-datetime-edit-text,
+	&::-webkit-datetime-edit-minute,
+	&::-webkit-datetime-edit-hour-field,
+	&::-webkit-datetime-edit-day-field,
+	&::-webkit-datetime-edit-month-field,
+	&::-webkit-datetime-edit-year-field,
+	&::-webkit-color-swatch-wrapper {
+		padding: 0;
+	}
 }
 
 /* Input Number */
@@ -543,13 +545,14 @@ legend {
 
 /* Input File Upload */
 
-::file-selector-button {
-	font: inherit;
-}
-
-::-webkit-file-upload-button {
-	appearance: button;
-	font: inherit;
+[type='file'] {
+	&::file-selector-button {
+		font: inherit;
+	}
+	&::-webkit-file-upload-button {
+		appearance: button;
+		font: inherit;
+	}
 }
 
 /* Input Range */
